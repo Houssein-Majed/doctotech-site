@@ -2083,7 +2083,7 @@
 
         menuBtn.addEventListener('click', () => navCenter.classList.toggle('show'));
 
-        navCenter.querySelectorAll('a, select').forEach(link => {
+        navCenter.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => navCenter.classList.remove('show'));
         });
 
