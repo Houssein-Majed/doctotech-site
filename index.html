@@ -968,6 +968,7 @@
                         <option value="fr">Français</option>
                         <option value="en">English</option>
                         <option value="pl">Polski</option>
+                        <option value="fi">Suomi</option>
                     </select>
                 </div>
             </div>
@@ -1363,6 +1364,98 @@
 
     <script>
         const translations = {
+            fi: {
+                topBadge: "Kuvitteellinen sivusto – opetuksellinen demonstraatio Docto'thèque-esittelyä varten · Mitään oikeita maksutapahtumia ei suoriteta.",
+                navHome: "Etusivu",
+                navProducts: "Tuotteet",
+                navAbout: "Tietoa meistä",
+                navOrder: "Tilaa",
+                navReviews: "Arvostelut",
+                navContact: "Yhteystiedot",
+                navCart: "Ostoskori",
+                heroEyebrow: "Innovaatio · Luottamus · Saavutettavuus",
+                heroTitle: "Arjen terveyttä, huolellisesti suunniteltuna.",
+                heroDesc: "Tervetuloa <strong>Docto'thèqueen</strong>, kuvitteelliseen lääkeyritykseen, joka on erikoistunut itsehoitolääkkeisiin. Yhdistämme luottamusta herättävän brändi-ilmeen, koetun laadun ja helpon ostokokemuksen tarjotaksemme kaksi päätuotetta: <strong>Pylénol</strong> ja <strong>Revitalox</strong>.",
+                btnDiscover: "Tutustu tuotteisiimme",
+                btnOrder: "Tilaa nyt",
+                heroStat1: "2 tuotetta",
+                heroStatDesc1: "Selkeä, helposti hahmotettava ja luottamukseen perustuva valikoima.",
+                heroStat2: "4.8/5",
+                heroStatDesc2: "Asiakkaidemme simuloitu keskimääräinen tyytyväisyys.",
+                heroStat3: "Toimitus 48 h",
+                heroStatDesc3: "Simuloitu nopea ja helposti saavutettava palvelu.",
+                tagBestSeller: "Myydyin",
+                heroRating: "4,8 · 1243 arvostelua",
+                aboutKicker: "TIETOA MEISTÄ",
+                aboutTitle: "Luotettava brändi.",
+                aboutDesc: "Docto'thèque on kuvitteellinen yritys, joka on luotu osana opetuksellista projektia. Sen identiteetti perustuu selkeään asemointiin: <strong>tehokkuus</strong>, <strong>laatu</strong>, <strong>saavutettavuus</strong> ja <strong>vahva kaupallinen läsnäolo</strong>. Tämä sivu simuloi verkkoapteekkia ilman käyttäjätiliä tai oikeaa maksamista.",
+                aboutPromise: "Lupauksemme",
+                aboutPromiseDesc: "Tarjota sujuva ja moderni kokemus kahden päätuotteen ympärillä: <strong>Pylénol</strong>, suosittu ja helposti lähestyttävä tuotteemme, sekä <strong>Revitalox</strong>, erottuvampi ratkaisu elinvoimaan ja arjen hyvinvointiin.",
+                aboutVision: "Visiomme",
+                aboutVisionDesc: "Luoda verkkokauppakokemus, joka herättää luottamusta ja tuo esiin arjen terveydenhuollon tuotteet, samalla tarjoten opetuksellisen esimerkin hyvistä suunnittelu- ja käyttökokemuskäytännöistä farmaseuttisella alalla.",
+                featureQuality: "Koettu laatu",
+                featureQualityDesc: "Rauhoittava visuaalinen maailma ja ensiluokkainen tuote-esittely.",
+                featureAccess: "Saavutettavuus",
+                featureAccessDesc: "Yksinkertainen navigointi, nopea lisäys ostoskoriin ja intuitiivinen käyttökokemus.",
+                featureBrand: "Brändi-imago",
+                featureBrandDesc: "Moderni design, joka on inspiroitunut apteekki-, parafarmasia- ja vähittäiskauppamaailmasta.",
+                featureDemo: "Interaktiivinen demo",
+                featureDemoDesc: "Simuloitu ostoskori, modaalit, pehmeät animaatiot ja kuvitteelliset asiakasarvostelut.",
+                productsKicker: "TUOTTEET",
+                productsTitle: "Kaksi tuotetta, kaksi toisiaan täydentävää asemointia.",
+                productsDesc: "Tutustu tuotesivuihimme marketplace-/verkkoapteekkityyliin. Kuvaukset ovat kuvitteellisia, mutta kirjoitettu uskottavalla, luotettavalla ja myyvällä sävyllä.",
+                tagFastDelivery: "Nopea toimitus",
+                tagPopular: "Erittäin kysytty",
+                pilenolDesc: "Kuvitteellinen itsehoidossa käytettävä kipulääke, joka on suunniteltu nopeaan, helppoon ja arkeen sopivaan helpotukseen.",
+                reviews1: "· 1243 simuloitua arvostelua",
+                pilenolBullet1: "Nopea vaikutus ja käytännöllinen muoto päivittäiseen käyttöön.",
+                pilenolBullet2: "Suosittu tuote helposti lähestyttävällä asemoinnilla.",
+                pilenolBullet4: "Selkeä, luottamusta herättävä esittely, joka sopii moderniin verkkokauppaan.",
+                tagPremium: "Premium",
+                tagVitality: "Vitaliteettikaava",
+                tagDifferentiation: "Erottuvuus",
+                revitaloxDesc: "Kuvitteellinen elinvoimaan ja antioksidantteihin suuntautunut ratkaisu asiakkaille, jotka etsivät laadukkaampaa lähestymistapaa.",
+                reviews2: "· 864 simuloitua arvostelua",
+                revitaloxBullet1: "Premium-tyylinen asemointi erottuvalla tuoteimagolla.",
+                revitaloxBullet2: "Laadukkaampi ja ylellisempi sävy.",
+                btnAddCart: "Lisää ostoskoriin",
+                btnDetails: "Katso tiedot",
+                orderKicker: "TILAA",
+                orderTitle: "Tilauksen simulointi.",
+                orderDesc: "Lisää tuotteita ostoskoriin, säädä määriä ja vahvista kuvitteellinen tilaus. Käyttäjätiliä ei tarvita eikä oikeaa maksua suoriteta.",
+                cartTitle: "Ostoskori",
+                emptyCart: "Ostoskorisi on tällä hetkellä tyhjä.",
+                summaryTitle: "Yhteenveto",
+                summarySubtotal: "Välisumma",
+                summaryShipping: "Toimitus",
+                summaryFree: "Ilmainen",
+                summarySimulation: "Simulaatio",
+                summaryNoPayment: "Ei maksua",
+                summaryTotal: "Yhteensä",
+                btnCheckout: "Vahvista tilaus",
+                checkoutNote: "Klikkaamalla tätä painiketta näkyviin tulee simuloitu vahvistus. Sen jälkeen ostoskori tyhjennetään, jotta koko vuorovaikutus voidaan näyttää.",
+                reviewsKicker: "ASIAKASARVOSTELUT",
+                reviewsTitle: "Kuvitteellisia kokemuksia",
+                review1Author: "Houssein M.",
+                review2Author: "Charlotte M.",
+                review3Author: "Arthur LB.",
+                verifiedBuyer: "Vahvistettu ostaja (simulaatio)",
+                review1Text: "\"Pylenol pelastaa henkeni.\"",
+                review2Text: "\"Revitalox antaa todella premium-vaikutelman.\"",
+                review3Text: "\"Rakastan tätä kauppaa\"",
+                review4Author: "rageux",
+                review4Text: "\"Labobo on parempi kuin te\"",
+                contactKicker: "YHTEYSTIEDOT",
+                contactDesc: "Ota meihin yhteyttä saadaksesi lisätietoja tai jos sinulla on kysyttävää.",
+                contactCoords: "Kuvitteelliset yhteystiedot",
+                disclaimerTitle: "Huomautukset",
+                disclaimerText: "Tämä sivusto on kuvitteellinen demonstraatio, joka on toteutettu akateemista projektia varten. Näytetyt tuotteet, arvostelut, tilaukset ja hinnat ovat simuloituja. Sivusto ei tarjoa lääketieteellisiä palveluja, oikeaa maksamista tai käyttäjätilejä.",
+                toastEmptyCart: "Ostoskorisi on tyhjä.",
+                confirmOrder: "Tilaus vahvistettu (simulaatio) ✅\n\nKiitos Docto'thèque-demonstratiosta.\nMitään oikeaa maksua ei ole suoritettu.",
+                removeBtn: "Poista ostoskorista",
+                pilenolLongDesc: "Pylénol esitellään selkeänä, suosittuna ja heti luottamusta herättävänä ratkaisuna.",
+                revitaloxLongDesc: "Revitalox korostaa premium-henkistä imagoa ja korkeampaa koettua arvoa."
+            },
             fr: {
                 topBadge: "Site fictif — démonstration pédagogique pour la soutenance Docto'thèque · Aucune transaction réelle n'est effectuée.",
                 navHome: "Accueil",
@@ -1400,14 +1493,6 @@
                 featureBrandDesc: "Design moderne inspiré de la pharmacie, de la parapharmacie et du retail.",
                 featureDemo: "Démonstration interactive",
                 featureDemoDesc: "Panier simulé, modales, animations douces et avis clients fictifs.",
-                aboutWhy: "Pourquoi ce site ?",
-                aboutWhyDesc: "Cette page a pour objectif de mettre en scène l'identité de Docto'thèque dans le cadre d'une soutenance. Elle illustre une entreprise capable de construire une présence commerciale crédible, attractive et dynamique.",
-                featureFictional: "Boutique fictive",
-                featureFictionalDesc: "Achat simulé sans authentification ni paiement réel.",
-                featureStandard: "Inspiré des standards e-commerce",
-                featureStandardDesc: "Fiches produit détaillées, ratings, badges, panier interactif, retours visuels.",
-                featureReady: "Prêt à présenter",
-                featureReadyDesc: "Tout est contenu dans un seul fichier <code>index.html</code> avec CSS et JavaScript intégrés.",
                 productsKicker: "PRODUITS",
                 productsTitle: "Deux références, deux positionnements complémentaires.",
                 productsDesc: "Découvrez nos fiches produit façon marketplace / pharmacie en ligne. Les descriptions sont fictives mais rédigées avec un ton crédible, rassurant et vendeur.",
@@ -1501,14 +1586,6 @@
                 featureBrandDesc: "Modern design inspired by pharmacy, parapharmacy and retail.",
                 featureDemo: "Interactive Demo",
                 featureDemoDesc: "Simulated cart, modals, smooth animations and fictional customer reviews.",
-                aboutWhy: "Why this site?",
-                aboutWhyDesc: "This page aims to stage Docto'thèque's identity during a presentation. It illustrates a company capable of building a credible, attractive and dynamic commercial presence.",
-                featureFictional: "Fictional Shop",
-                featureFictionalDesc: "Simulated purchase without authentication or real payment.",
-                featureStandard: "E-commerce Standards",
-                featureStandardDesc: "Detailed product sheets, ratings, badges, interactive cart, visual feedback.",
-                featureReady: "Ready to Present",
-                featureReadyDesc: "Everything is contained in a single <code>index.html</code> file with integrated CSS and JavaScript.",
                 productsKicker: "PRODUCTS",
                 productsTitle: "Two references, two complementary positioning.",
                 productsDesc: "Discover our product sheets in marketplace / online pharmacy style. The descriptions are fictional but written with a credible, reassuring and persuasive tone.",
@@ -1608,14 +1685,6 @@
                 featureBrandDesc: "Nowoczesny design inspirowany apteką, parafarmacją i handlem detalicznym.",
                 featureDemo: "Interaktywne demo",
                 featureDemoDesc: "Symulowany koszyk, okna modalne, płynne animacje i fikcyjne opinie klientów.",
-                aboutWhy: "Dlaczego ta strona?",
-                aboutWhyDesc: "Ta strona ma na celu zaprezentowanie tożsamości Docto'thèque podczas prezentacji. Pokazuje firmę zdolną do budowania wiarygodnej, atrakcyjnej i dynamicznej obecności handlowej.",
-                featureFictional: "Fikcyjny sklep",
-                featureFictionalDesc: "Symulowany zakup bez logowania i bez rzeczywistej płatności.",
-                featureStandard: "Standardy e-commerce",
-                featureStandardDesc: "Szczegółowe karty produktów, oceny, odznaki, interaktywny koszyk i wizualny feedback.",
-                featureReady: "Gotowe do prezentacji",
-                featureReadyDesc: "Wszystko zawarte w jednym pliku <code>index.html</code> ze zintegrowanym CSS i JavaScript.",
                 productsKicker: "PRODUKTY",
                 productsTitle: "Dwa produkty, dwa uzupełniające się pozycjonowania.",
                 productsDesc: "Odkryj nasze karty produktów w stylu marketplace / apteki internetowej. Opisy są fikcyjne, ale napisane wiarygodnym, uspokajającym i przekonującym tonem.",
@@ -1697,6 +1766,11 @@
                 currency: "EUR",
                 pilenol: { current: 239, old: 249 },
                 revitalox: { current: 300, old: 310 }
+            },
+            fi: {
+                currency: "EUR",
+                pilenol: { current: 239, old: 249 },
+                revitalox: { current: 300, old: 310 }
             }
         };
 
@@ -1715,6 +1789,11 @@
                 email: "kontakt@doctotech.pl",
                 phone: "+48 22 123 45 67",
                 address: "ul. Polytech 21, 00-628 Warszawa"
+            },
+            fi: {
+                email: "kontakt@doctotech.fi",
+                phone: "+358 9 1234 5678",
+                address: "Polytech Tie 21, 00100 Helsinki"
             }
         };
 
@@ -1764,7 +1843,7 @@
             products.pilenol.bullets = [
                 translations[currentLanguage].pilenolBullet1,
                 translations[currentLanguage].pilenolBullet2,
-                translations[currentLanguage].pilenolBullet3,
+                translations[currentLanguage].pilenolBullet3 || translations[currentLanguage].pilenolBullet4,
                 translations[currentLanguage].pilenolBullet4
             ];
             products.pilenol.badges = [
@@ -1780,7 +1859,7 @@
             products.revitalox.bullets = [
                 translations[currentLanguage].revitaloxBullet1,
                 translations[currentLanguage].revitaloxBullet2,
-                translations[currentLanguage].revitaloxBullet3,
+                translations[currentLanguage].revitaloxBullet3 || translations[currentLanguage].revitaloxBullet4,
                 translations[currentLanguage].revitaloxBullet4
             ];
             products.revitalox.badges = [
@@ -1802,7 +1881,7 @@
         function updatePrices() {
             const prices = pricesByCountry[currentLanguage];
             const formatter = new Intl.NumberFormat(
-                currentLanguage === 'en' ? 'en-GB' : currentLanguage === 'pl' ? 'pl-PL' : 'fr-FR',
+                currentLanguage === 'en' ? 'en-GB' : currentLanguage === 'pl' ? 'pl-PL' : currentLanguage === 'fi' ? 'fi-FI' : 'fr-FR',
                 {
                     style: 'currency',
                     currency: prices.currency
@@ -1852,7 +1931,7 @@
         function getFormatter() {
             const prices = pricesByCountry[currentLanguage];
             return new Intl.NumberFormat(
-                currentLanguage === 'en' ? 'en-GB' : currentLanguage === 'pl' ? 'pl-PL' : 'fr-FR',
+                currentLanguage === 'en' ? 'en-GB' : currentLanguage === 'pl' ? 'pl-PL' : currentLanguage === 'fi' ? 'fi-FI' : 'fr-FR',
                 {
                     style: 'currency',
                     currency: prices.currency
@@ -1938,8 +2017,9 @@
 
             const addedMsg =
                 currentLanguage === 'fr' ? `${product.name} ajouté au panier.` :
-                    currentLanguage === 'en' ? `${product.name} added to cart.` :
-                        `${product.name} dodano do koszyka.`;
+                    currentLanguage === 'fi' ? `${product.name} lisätty ostoskoriin.` :
+                        currentLanguage === 'en' ? `${product.name} added to cart.` :
+                            `${product.name} dodano do koszyka.`;
 
             showToast(addedMsg);
         }
@@ -1965,8 +2045,9 @@
 
                 const removedMsg =
                     currentLanguage === 'fr' ? `${name} retiré du panier.` :
-                        currentLanguage === 'en' ? `${name} removed from cart.` :
-                            `${name} usunięto z koszyka.`;
+                        currentLanguage === 'fi' ? `${name} poistettu ostoskorista.` :
+                            currentLanguage === 'en' ? `${name} removed from cart.` :
+                                `${name} usunięto z koszyka.`;
 
                 showToast(removedMsg);
             }
@@ -2029,8 +2110,9 @@
 
             const reviewsText =
                 currentLanguage === 'fr' ? `· ${p.reviews} avis simulés` :
-                    currentLanguage === 'en' ? `· ${p.reviews} simulated reviews` :
-                        `· ${p.reviews} symulowane opinie`;
+                    currentLanguage === 'fi' ? `· ${p.reviews} simuloitua arvostelua` :
+                        currentLanguage === 'en' ? `· ${p.reviews} simulated reviews` :
+                            `· ${p.reviews} symulowane opinie`;
 
             modalReviews.textContent = reviewsText;
             modalBullets.innerHTML = p.bullets.map(item => `<li>${item}</li>`).join('');
